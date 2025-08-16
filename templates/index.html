@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>7. Sensor de Aproximação (Ultrassônico)</title>
+        <meta name="description" content>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet"
+            href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <h1>🚗 Simulação Sensor Ultrassônico</h1>
+        <p>Distância atual: <span id="distancia">--</span> px</p>
+        <div id="carro">
+            <img id="carro-img"
+                src="https://blog.mixauto.com.br/wp-content/uploads/2017/01/guia-compras-sensor-estacionamento.png"
+                alt="carro-img">
+            <div id="sensor">
+
+            </div>
+        </div>
+        <div class="leds">
+            <div class="led" id="led-vermelho"></div>
+            <div class="led" id="led-amarelo"></div>
+            <div class="led" id="led-verde"></div>
+        </div>
+
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+    </body>
+</html>
